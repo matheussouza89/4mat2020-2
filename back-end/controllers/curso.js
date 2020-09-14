@@ -38,4 +38,17 @@ controller.novo = async (req, res) => {
     }
 }
 
+//Método listar(), implementando a operação RETRIEVE
+controller.listar = async (req,res) => {
+    try{
+        //find() sem parâmetros é para trazer tudo
+        let dados = await Curso.find()
+        res.send(dados)
+    }
+    catch(erro){
+        console.error(erro)
+        res.status(500).send(erro)
+    }
+}
+
 module.exports = controller
