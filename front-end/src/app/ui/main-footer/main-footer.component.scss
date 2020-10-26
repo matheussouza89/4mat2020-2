@@ -1,0 +1,17 @@
+mat-toolbar {
+    // Centralizar os itens
+    justify-content: center;
+    // Diminuir o tamanho da fonte
+    font-size: 90%;
+    // Diminuir a altura da Toolbar
+    height: 32px;
+    // Posicionando a toolbar no fundo da página
+    position: fixed;
+    bottom: 0;
+}
+
+mat-toolbar mat-icon{
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+}
