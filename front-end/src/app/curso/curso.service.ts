@@ -12,7 +12,7 @@ export class CursoService {
   constructor(private http : HttpClient) { }
 
     listar(){
-        this.http.get('${server}curso').toPromise()
+         return this.http.get(this.server + 'curso').toPromise()
     }
 
 }
