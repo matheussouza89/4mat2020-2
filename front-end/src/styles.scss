@@ -52,3 +52,12 @@ div.content {
    }
  
 }
+
+.form-buttons {
+   background: transparent;
+ 
+   mat-toolbar-row {
+      display: flex;
+      justify-content: space-around;
+   }
+}

@@ -28,4 +28,16 @@
     <input name="valor_curso" [(ngModel)]="curso.valor_curso" matInput required placeholder="Informe o valor do Curso">
     </mat-form-field>
 
+     <!-- No curso-form.component.html, imediatamente ANTES do </form> -->
+  <mat-toolbar class="form-buttons">
+    <mat-toolbar-row>
+      <button mat-raised-button type="submit" color="accent">
+        Salvar
+      </button>
+      <button mat-raised-button type="button" (click)="voltar(f)">
+        Voltar
+      </button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
 </form>
